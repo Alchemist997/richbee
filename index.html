@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" sizes="32x32" rel="icon" href="favicon.png">
+    <title>RICHBEE</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/modal-box.css">
+    <link rel="stylesheet" href="styles/slick.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <script defer src="js/main_slider.js"></script>
+    <script defer src="js/tabs.js"></script>
+
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="js/slick.min.js"></script>
+    <script defer src="js/slick_config.js"></script>
+
+    <script defer src="js/modal-box.min.js"></script>
+    <script defer src="js/modal_config.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__top-content container">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Оптовикам</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Заказ и доставка</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">О компании</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Обзоры</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="contacts">
+                    <li class="contacts__item">
+                        <a href="#" class="contacts__req-call">Заказать звонок</a>
+                    </li>
+
+                    <li class="contacts__item">
+                        <ul class="social-btns">
+                            <li class="social-btns__item">
+                                <a href="#" class="social-btns__link">
+                                    <img src="img/vk.svg" alt="VK" class="social-btns__img">
+                                </a>
+                            </li>
+                            <li class="social-btns__item">
+                                <a href="#" class="social-btns__link">
+                                    <img src="img/wa.svg" alt="WhatsApp" class="social-btns__img">
+                                </a>
+                            </li>
+                            <li class="social-btns__item">
+                                <a href="#" class="social-btns__link">
+                                    <img src="img/insta.svg" alt="Insta" class="social-btns__img">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="contacts__item contacts__item--links">
+                        <a href="mailto:info@richbee.ru" class="contacts__link">info@richbee.ru</a>
+                        <div class="contacts__separator"></div>
+                        <a href="tel:88005411335" class="contacts__link">8 (800) 541-13-35 </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header__middle">
+            <div class="header__middle-content container">
+                <a class="logo-wrap" href="#">
+                    <img class="logo-main" src="img/logo.svg" alt="Logo">
+                    <img class="logo-text" src="img/logo-text.svg" alt="Logo2">
+                </a>
+
+                <form class="header__form">
+                    <input class="header__input" type="text" placeholder="Поиск товаров по сайту">
+                    <button class="header__search-btn">
+                        <img class="header__search-img" src="img/search.svg" alt="Search">
+                    </button>
+                </form>
+
+                <div class="header__btns-wrap">
+                    <button class="header-btn" type="button" id="open-modal">
+                        <div class="header-btn__img-wrap">
+                            <img class="header-btn__img" src="img/profile.svg" alt="Profile">
+                        </div>
+                        <div class="header-btn__text">
+                            <p class="header-btn__text-up">Вход</p>
+                            <p class="header-btn__text-btm">Регистрация</p>
+                        </div>
+                    </button>
+
+                    <a class="header-btn" href="#">
+                        <div class="header-btn__img-wrap">
+                            <img class="header-btn__img" src="img/basket.svg" alt="Basket">
+                            <div class="basket-mark"></div>
+                        </div>
+                        <div class="header-btn__text">
+                            <p class="header-btn__text-up total-price">4 127 350</p>
+                            <p class="header-btn__text-btm total-products">3 534</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="header__btm">
+            <div class="header__btm-content container">
+                <a class="header__category" href="#">Каталог товаров</a>
+                <a class="header__category" href="#">акции и скидки</a>
+                <div class="header__btm-separator"></div>
+                <a class="header__category" href="#">Автосвет</a>
+                <a class="header__category" href="#">Автохимия</a>
+                <a class="header__category" href="#">Инструменты</a>
+                <a class="header__category" href="#">Крепеж</a>
+                <a class="header__category" href="#">Электрика</a>
+                <a class="header__category" href="#">Посуда</a>
+                <a class="header__category" href="#">Аксессуары</a>
+                <a class="header__category" href="#">БРЫЗГОВИКИ</a>
+                <a class="header__category" href="#">Фары</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="main__content">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Каталог</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Инструменты</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link breadcrumbs__link--active">Набор инструментов МАСТАК 94
+                            предмета 01-094C [01-094C]</a>
+                    </li>
+                </ul>
+
+                <div class="product">
+                    <h1 class="product__title">Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]</h1>
+
+                    <div class="product__main">
+
+                        <div class="product__imgs">
+                            <div class="product__slider">
+                                <button class="slider-arrow slider-arrow--up"></button>
+
+                                <button class="product__preview">
+                                    <img class="product__preview-img" src="img/content/p1.png">
+                                </button>
+
+                                <button class="product__preview product__preview--active">
+                                    <img class="product__preview-img" src="img/content/p2.png">
+                                </button>
+
+                                <button class="product__preview">
+                                    <img class="product__preview-img" src="img/content/p3.png">
+                                </button>
+
+                                <button class="product__preview">
+                                    <img class="product__preview-img" src="img/content/p4.png">
+                                </button>
+
+                                <button class="product__preview">
+                                    <img class="product__preview-img img-play" src="img/content/p5.svg">
+                                </button>
+
+                                <button class="slider-arrow slider-arrow--down"></button>
+                            </div>
+
+                            <div class="product__full">
+                                <img class="product__full-img" src="img/content/p2.png">
+                            </div>
+                        </div>
+
+                        <div class="product__info">
+                            <div class="product__info-part product__info-top">
+                                <p class="product__info-top-p">
+                                    <span class="product__info-top-span">
+                                        Внутренний код товара:
+                                    </span>
+                                    21215
+                                </p>
+
+                                <p class="product__info-top-p">
+                                    <span class="product__info-top-span">
+                                        Артикул:
+                                    </span>
+                                    01-094C
+                                </p>
+
+                                <div class="product__info-description">
+                                    Цена указана за набор инструментов <br>из 94-х предметов
+                                </div>
+                            </div>
+
+                            <div class="product__info-middle">
+                                <div class="product__price-block">
+                                    <div class="product__price">
+                                        <span class="product__price-value price-value">6 640</span>
+                                        <p class="product__price-info">ваша цена</p>
+                                    </div>
+                                    <div class="product__price--opt">
+                                        <span class="product__price-value product__price-value--opt price-value">5
+                                            350</span>
+                                        <button class="opt-info">
+                                            <img class="opt-info__img" src="img/info.svg">
+                                            <div class="opt-hidden opt-hidden--pos">
+                                                Для получения оптовых цен, добавьте в корзину товаров ещё на <b>10 000
+                                                    руб</b> (по оптовым ценам)
+                                            </div>
+                                        </button>
+                                        <p class="product__price-info">опт</p>
+                                    </div>
+                                </div>
+                                <button class="basket-btn"></button>
+                            </div>
+
+                            <div class="product__info-bottom">
+                                <img class="product__presence-status" src="img/avail.svg">
+                                <span class="product__presence-status-text">В наличии</span>
+                                <p class="product__presence-address">На центральном складе</p>
+                                <p class="product__presence-address">В 2-х наших магазинах</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="product__prop">
+
+                        <div class="product__prop-btns">
+                            <button class="product__btn product__btn--active">О товаре</button>
+                            <button class="product__btn">Наличие товара</button>
+                        </div>
+
+                        <div class="tab-item tab-item--active">
+                            <div class="product__description">
+                                <div class="product__description-title">Описание товара</div>
+
+                                <div class="product__description-text">
+                                    <p class="product__description-p">
+                                        Переносной кейс предназначен для размещения
+                                        набора ручного инструмента Мастак 01-094 °C, состоящего из 94 предметов, а также
+                                        других, на усмотрение мастера, комплектаций. Применяется в мастерских, выездными
+                                        ремонтными бригадами, для работ в быту и т. д.
+                                    </p>
+
+                                    <p class="product__description-p">
+                                        Кейс изготовлен из качественного и ударопрочного ABS-пластика, обладает ярким
+                                        дизайном, имеет металлические замки с фиксатором CLIP-LOCK,
+                                        ручка для переноски
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-item">
+                            <ul class="product__avail">
+                                <li class="product__avail-head">
+                                    <p class="product__avail-head-item">Адрес</p>
+                                    <p class="product__avail-head-item">График работы</p>
+                                    <p class="product__avail-head-item">Наличие</p>
+                                    <p class="product__avail-head-item">Телефон</p>
+                                    <p class="product__avail-head-item product__avail-head-item--small">Адресa
+                                        магазинов,
+                                        график работы, наличие, телефоны</p>
+                                </li>
+
+                                <li class="product__avail-item">
+                                    <div class="product__avail-addr">
+                                        <p class="product__avail-loc">Центральный склад</p>
+                                        <p class="product__avail-loc-full">
+                                            Приморский край, ст. Жулевская, ул. Транспортная, 5-Г.
+                                        </p>
+                                        <p class="product__avail-loc-full">Магазин находится в
+                                            головном здании.</p>
+                                    </div>
+
+                                    <div class="product__avail-shedule">
+                                        <div class="product__avail-shedule-day">Пн-пт</div>
+                                        <div class="product__avail-shedule-time">7:00 - 17:00</div>
+                                    </div>
+
+                                    <div class="product__avail-status in-avail"></div>
+
+                                    <div class="product__avail-tel">8-(800) 251-44-75</div>
+                                </li>
+
+                                <li class="product__avail-item">
+                                    <div class="product__avail-addr">
+                                        <p class="product__avail-loc">м Октябрьское поле</p>
+                                        <p class="product__avail-loc-full">
+                                            Город Москва,
+                                        </p>
+                                        <p class="product__avail-loc-full">ул. Народного Ополчения, 48 корпус 1</p>
+                                    </div>
+
+                                    <div class="product__avail-shedule">
+                                        <div class="product__avail-shedule-day">Пн-вс</div>
+                                        <div class="product__avail-shedule-time">круглосуточно</div>
+                                    </div>
+
+                                    <div class="product__avail-status in-avail"></div>
+
+                                    <div class="product__avail-tel">8-(800) 251-44-75</div>
+                                </li>
+
+                                <li class="product__avail-item">
+                                    <div class="product__avail-addr">
+                                        <p class="product__avail-loc">м Петровско-Разумовская</p>
+                                        <p class="product__avail-loc-full">
+                                            Город Москва,
+                                        </p>
+                                        <p class="product__avail-loc-full">
+                                            ул. Линии Октябрьской Железной Дороги, д. 2с2</p>
+                                    </div>
+
+                                    <div class="product__avail-shedule">
+                                        <div class="product__avail-shedule-day">Пн-вс</div>
+                                        <div class="product__avail-shedule-time">круглосуточно</div>
+                                    </div>
+
+                                    <div class="product__avail-status in-avail"></div>
+
+                                    <div class="product__avail-tel">8-(800) 251-44-75</div>
+                                </li>
+
+                                <li class="product__avail-item">
+                                    <div class="product__avail-addr">
+                                        <p class="product__avail-loc">м Профсоюзная</p>
+                                        <p class="product__avail-loc-full">
+                                            Город Москва,
+                                        </p>
+                                        <p class="product__avail-loc-full">
+                                            Ломоносовский просп., д. 5</p>
+                                    </div>
+
+                                    <div class="product__avail-shedule">
+                                        <div class="product__avail-shedule-day">Пн-вс</div>
+                                        <div class="product__avail-shedule-time">круглосуточно</div>
+                                    </div>
+
+                                    <div class="product__avail-status no-avail"></div>
+
+                                    <div class="product__avail-tel">8-(800) 251-44-75</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <section class="analogs">
+        <div class="container">
+            <div class="analogs__content">
+                <p class="analogs__title">Аналоги</p>
+                <div class="analogs__slider">
+                    <article class="swiper-slide analog">
+                        <a class="analog__top" href="#">
+                            <div class="analog__img-wrap">
+                                <img class="analog__img" src="img/content/analogs/a1.png">
+                            </div>
+
+                            <p class="analog__info">
+                                Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]
+                            </p>
+                        </a>
+
+                        <div class="analog__btm">
+                            <p class="analog__avail in-avail"></p>
+
+                            <div class="analog__price-wrap">
+                                <div class="price-value analog__price">1 150</div>
+                            </div>
+
+                            <div class="analog__price-wrap">
+                                <div class="analog__price-wrap-wm">
+                                    <div class="price-value analog__price--opt">708</div>
+                                    <button class="opt-info">
+                                        <img class="opt-info__img" src="img/info-l.svg">
+                                        <div class="opt-hidden">
+                                            Для получения оптовых цен, добавьте в корзину товаров ещё на <b>10 000
+                                                руб</b> (по оптовым ценам)
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <button class="basket-btn"></button>
+                        </div>
+                    </article>
+
+                    <article class="swiper-slide analog">
+                        <a class="analog__top" href="#">
+                            <div class="analog__img-wrap">
+                                <img class="analog__img" src="img/content/analogs/a2.png">
+                            </div>
+
+                            <p class="analog__info">
+                                Маяк импульсный светодиодный на магните 10-30V 2-режима
+                            </p>
+                        </a>
+
+                        <div class="analog__btm">
+                            <p class="analog__avail in-avail"></p>
+
+                            <div class="analog__price-wrap">
+                                <div class="price-value analog__price">1 150</div>
+                            </div>
+
+                            <div class="analog__price-wrap">
+                                <div class="analog__price-wrap-wm">
+                                    <div class="price-value analog__price--opt">708</div>
+                                    <button class="opt-info">
+                                        <img class="opt-info__img" src="img/info-l.svg">
+                                        <div class="opt-hidden">
+                                            Для получения оптовых цен, добавьте в корзину товаров ещё на <b>10 000
+                                                руб</b> (по оптовым ценам)
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <button class="basket-btn"></button>
+                        </div>
+                    </article>
+
+                    <article class="swiper-slide analog analog-noavail">
+                        <a class="analog__top" href="#">
+                            <div class="analog__img-wrap">
+                                <img class="analog__img" src="img/content/analogs/a3.png">
+                            </div>
+
+                            <p class="analog__info">
+                                Указатель габаритов с повторителем поворота «Бегущие огни» на светодиодах
+                            </p>
+                        </a>
+
+                        <div class="analog__btm">
+                            <p class="analog__avail no-avail"></p>
+
+                            <div class="analog__price-wrap">
+                                <div class="price-value analog__price">1 150</div>
+                            </div>
+
+                            <div class="analog__price-wrap">
+                                <div class="analog__price-wrap-wm">
+                                    <div class="price-value analog__price--opt">708</div>
+                                    <button class="opt-info">
+                                        <img class="opt-info__img" src="img/info-l.svg">
+                                        <div class="opt-hidden">
+                                            Для получения оптовых цен, добавьте в корзину товаров ещё на <b>10 000
+                                                руб</b> (по оптовым ценам)
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <button class="basket-btn basket-btn--noav"></button>
+                        </div>
+                    </article>
+
+                    <article class="swiper-slide analog analog-sale">
+                        <div class="analog-sale__mark"></div>
+                        <a class="analog__top" href="#">
+                            <div class="analog__img-wrap">
+                                <img class="analog__img" src="img/content/analogs/a4.png">
+                            </div>
+
+                            <p class="analog__info">
+                                Фара противотуманная дальнего света круглая с желтым габаритом (двухрежимная) 12-24
+                                В,
+                                27
+                                Вт,
+                                4 узкая
+                            </p>
+                        </a>
+
+                        <div class="analog__btm">
+                            <p class="analog__avail in-avail"></p>
+
+                            <div class="analog__price-wrap">
+                                <div class="price-value analog__price">1 150</div>
+                                <div class="price-value price-old">3 990</div>
+                            </div>
+
+                            <div class="analog__price-wrap">
+                                <div class="analog__price-wrap-wm">
+                                    <div class="price-value analog__price--opt">708</div>
+                                    <button class="opt-info">
+                                        <img class="opt-info__img" src="img/info-l.svg">
+                                        <div class="opt-hidden">
+                                            Для получения оптовых цен, добавьте в корзину товаров ещё на <b>10 000
+                                                руб</b> (по оптовым ценам)
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="price-value price-old">2 347</div>
+                            </div>
+
+                            <button class="basket-btn"></button>
+                        </div>
+                    </article>
+
+                    <article class="swiper-slide analog analog-noavail">
+                        <a class="analog__top" href="#">
+                            <div class="analog__img-wrap">
+                                <img class="analog__img" src="img/content/analogs/a3.png">
+                            </div>
+
+                            <p class="analog__info">
+                                Указатель габаритов с повторителем поворота «Бегущие огни» на светодиодах
+                            </p>
+                        </a>
+
+                        <div class="analog__btm">
+                            <p class="analog__avail no-avail"></p>
+
+                            <div class="analog__price-wrap">
+                                <div class="price-value analog__price">1 150</div>
+                            </div>
+
+                            <div class="analog__price-wrap">
+                                <div class="analog__price-wrap-wm">
+                                    <div class="price-value analog__price--opt">708</div>
+                                    <button class="opt-info">
+                                        <img class="opt-info__img" src="img/info-l.svg">
+                                        <div class="opt-hidden">
+                                            Для получения оптовых цен, добавьте в корзину товаров ещё на <b>10 000
+                                                руб</b> (по оптовым ценам)
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <button class="basket-btn basket-btn--noav"></button>
+                        </div>
+                    </article>
+
+                    <article class="swiper-slide analog">
+                        <a class="analog__top" href="#">
+                            <div class="analog__img-wrap">
+                                <img class="analog__img" src="img/content/analogs/a1.png">
+                            </div>
+
+                            <p class="analog__info">
+                                Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]
+                            </p>
+                        </a>
+
+                        <div class="analog__btm">
+                            <p class="analog__avail in-avail"></p>
+
+                            <div class="analog__price-wrap">
+                                <div class="price-value analog__price">1 150</div>
+                            </div>
+
+                            <div class="analog__price-wrap">
+                                <div class="analog__price-wrap-wm">
+                                    <div class="price-value analog__price--opt">708</div>
+                                    <button class="opt-info">
+                                        <img class="opt-info__img" src="img/info-l.svg">
+                                        <div class="opt-hidden">
+                                            Для получения оптовых цен, добавьте в корзину товаров ещё на <b>10 000
+                                                руб</b> (по оптовым ценам)
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <button class="basket-btn"></button>
+                        </div>
+                    </article>
+
+                    <article class="swiper-slide analog analog-sale">
+                        <div class="analog-sale__mark"></div>
+                        <a class="analog__top" href="#">
+                            <div class="analog__img-wrap">
+                                <img class="analog__img" src="img/content/analogs/a4.png">
+                            </div>
+
+                            <p class="analog__info">
+                                Фара противотуманная дальнего света круглая с желтым габаритом (двухрежимная) 12-24
+                                В,
+                                27
+                                Вт,
+                                4 узкая
+                            </p>
+                        </a>
+
+                        <div class="analog__btm">
+                            <p class="analog__avail in-avail"></p>
+
+                            <div class="analog__price-wrap">
+                                <div class="price-value analog__price">1 150</div>
+                                <div class="price-value price-old">3 990</div>
+                            </div>
+
+                            <div class="analog__price-wrap">
+                                <div class="analog__price-wrap-wm">
+                                    <div class="price-value analog__price--opt">708</div>
+                                    <button class="opt-info">
+                                        <img class="opt-info__img" src="img/info-l.svg">
+                                        <div class="opt-hidden">
+                                            Для получения оптовых цен, добавьте в корзину товаров ещё на <b>10 000
+                                                руб</b> (по оптовым ценам)
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="price-value price-old">2 347</div>
+                            </div>
+
+                            <button class="basket-btn"></button>
+                        </div>
+                    </article>
+
+                    <article class="swiper-slide analog">
+                        <a class="analog__top" href="#">
+                            <div class="analog__img-wrap">
+                                <img class="analog__img" src="img/content/analogs/a2.png">
+                            </div>
+
+                            <p class="analog__info">
+                                Маяк импульсный светодиодный на магните 10-30V 2-режима
+                            </p>
+                        </a>
+
+                        <div class="analog__btm">
+                            <p class="analog__avail in-avail"></p>
+
+                            <div class="analog__price-wrap">
+                                <div class="price-value analog__price">1 150</div>
+                            </div>
+
+                            <div class="analog__price-wrap">
+                                <div class="analog__price-wrap-wm">
+                                    <div class="price-value analog__price--opt">708</div>
+                                    <button class="opt-info">
+                                        <img class="opt-info__img" src="img/info-l.svg">
+                                        <div class="opt-hidden">
+                                            Для получения оптовых цен, добавьте в корзину товаров ещё на <b>10 000
+                                                руб</b> (по оптовым ценам)
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <button class="basket-btn"></button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <img class="footer__img" src="img/mail.svg" alt="Почтовый конверт">
+                    <p class="footer__main-text">Будьте в курсе новостей и акций</p>
+                    <p class="footer__description">Подпишитесь на рассылку и получайте первым информацию об акциях
+                        Richbee</p>
+                </div>
+
+                <form class="footer__form">
+                    <input type="text" class="footer__input" placeholder="Электронная почта">
+                    <button class="basket-btn footer__btn" type="submit">ПОДПИСАТЬСЯ</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="my-modal">
+        <p class="modal__title">Вход в личный кабинет</p>
+
+        <p class="modal__label">Email</p>
+        <input class="modal__input" type="email" placeholder="Email" value="nikolayivanovich@yandex.ru">
+
+        <p class="modal__label">Пароль</p>
+        <input class="modal__input" type="password" placeholder="Пароль">
+        <p class="forgot-pass">Забыли пароль?</p>
+
+        <div class="modal__btns">
+            <button class="basket-btn basket-btn--modal basket-btn--login">Войти</button>
+            <button class="basket-btn basket-btn--modal basket-btn--reg">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+        </div>
+    </div>
+</body>
+
+</html>
