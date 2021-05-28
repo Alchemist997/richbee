@@ -1,0 +1,134 @@
+@media (max-width: 1100px) {
+  .header__btm-content {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 768px) {
+  .product__main {
+    flex-direction: column;
+  }
+
+  .product__info {
+    margin-top: 20px;
+    align-self: center;
+  }
+
+  .product__avail {
+    justify-items: start;
+  }
+  .product__avail-head {
+    grid-template-columns: auto;
+  }
+  .product__avail-head-item {
+    display: none;
+  }
+  .product__avail-head-item--small {
+    display: block;
+  }
+  .product__avail-item {
+    grid-template-columns: none;
+    grid-template-rows: auto;
+  }
+
+  .footer__img, .footer__main-text {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .logo-wrap {
+    margin-right: 28px;
+  }
+
+  .header__form {
+    margin-left: 0;
+  }
+
+  .product__description {
+    flex-direction: column;
+  }
+  .product__description-title {
+    align-self: center;
+  }
+
+  .modal {
+    padding: 10.9% 7.5% 7% 6.2%;
+  }
+  .modal__title {
+    font-size: 5.6vw;
+  }
+}
+@media (max-width: 568px) {
+  .header__top-content {
+    justify-content: space-around;
+  }
+
+  .contacts__item, .contacts__link {
+    padding: 8px 0;
+    margin-right: 0;
+  }
+
+  .nav__list, .contacts, .contacts__item--links {
+    flex-direction: column;
+  }
+
+  .contacts__separator {
+    display: none;
+  }
+}
+@media (max-width: 479px) {
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__input, .footer__description {
+    margin-right: 0;
+  }
+  .footer__input::placeholder {
+    text-align: center;
+  }
+}
+@media (max-width: 440px) {
+  .logo-wrap {
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  .header__form {
+    margin-right: 0;
+  }
+
+  .header__btns-wrap {
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .header-btn + .header-btn {
+    margin-left: 0;
+  }
+
+  .modal__btns {
+    flex-direction: column;
+  }
+
+  .basket-btn--modal {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 420px) {
+  .product__imgs {
+    min-width: 280px;
+  }
+
+  .product__info {
+    width: 100%;
+    min-width: 280px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */
