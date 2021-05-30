@@ -12,6 +12,7 @@ button {
 
 *, *::before, *::after {
     box-sizing: border-box;
+    outline: none;
 }
 
 $main: #383838;
@@ -404,6 +405,7 @@ body {
         align-items: center;
         border-radius: 0 4px 4px 0;
         width: 48px;
+        transition: 0.1s;
 
         &:hover {
             background-color: $acc-hover;
@@ -422,6 +424,7 @@ body {
         border-radius: 4px;
         height: 48px;
         min-width: 176px;
+        transition: 0.1s;
 
         &:hover {
             background-color: $hover1;
@@ -436,7 +439,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 9px 13px;
+            padding: 0 13px;
             height: inherit;
         }
 
@@ -501,6 +504,7 @@ body {
         text-transform: uppercase;
         font-weight: 700;
         margin: 4px;
+        transition: 0.1s;
 
         &:not(:nth-child(1),:nth-child(2)) {
             color: $color2;
@@ -588,6 +592,7 @@ body {
         border: 1px solid #EEEEEE;
         padding: 5px;
         margin: 5px 0;
+        transition: 0.1s;
 
         &:hover {
             border-color: #767676;
@@ -1066,7 +1071,6 @@ body {
         padding: 10px 19px;
         height: 45px;
         max-width: 250px;
-        outline: none;
         background-color: transparent;
         border: 1px solid $main;
         border-radius: 4px;
@@ -1146,7 +1150,6 @@ body {
         font-weight: 500;
         color: $main;
         cursor: pointer;
-        outline: none;
 
         &:hover, &:focus {
             border: 1px solid $color2;

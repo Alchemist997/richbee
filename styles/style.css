@@ -13,6 +13,7 @@ button {
 
 *, *::before, *::after {
   box-sizing: border-box;
+  outline: none;
 }
 
 .product__presence-address, .product__info-description {
@@ -348,6 +349,7 @@ body {
   align-items: center;
   border-radius: 0 4px 4px 0;
   width: 48px;
+  transition: 0.1s;
 }
 .header__search-btn:hover {
   background-color: #ffc237;
@@ -363,6 +365,7 @@ body {
   border-radius: 4px;
   height: 48px;
   min-width: 176px;
+  transition: 0.1s;
 }
 .header-btn:hover {
   background-color: #efefef;
@@ -375,7 +378,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 13px;
+  padding: 0 13px;
   height: inherit;
 }
 .header-btn__text {
@@ -431,6 +434,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   margin: 4px;
+  transition: 0.1s;
 }
 .header__category:not(:nth-child(1), :nth-child(2)) {
   color: #b8b8b8;
@@ -502,6 +506,7 @@ body {
   border: 1px solid #EEEEEE;
   padding: 5px;
   margin: 5px 0;
+  transition: 0.1s;
 }
 .product__preview:hover {
   border-color: #767676;
@@ -885,7 +890,6 @@ body {
   padding: 10px 19px;
   height: 45px;
   max-width: 250px;
-  outline: none;
   background-color: transparent;
   border: 1px solid #383838;
   border-radius: 4px;
@@ -954,7 +958,6 @@ body {
   font-weight: 500;
   color: #383838;
   cursor: pointer;
-  outline: none;
 }
 .modal__input:hover, .modal__input:focus {
   border: 1px solid #b8b8b8;
