@@ -19,13 +19,11 @@
 
     <script defer src="js/main_slider.js"></script>
     <script defer src="js/tabs.js"></script>
+    <script defer src="js/al-modal.js"></script>
 
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script defer src="js/slick.min.js"></script>
     <script defer src="js/slick_config.js"></script>
-
-    <script defer src="js/modal-box.min.js"></script>
-    <script defer src="js/modal_config.js"></script>
 </head>
 
 <body>
@@ -92,15 +90,15 @@
                     <img class="logo-text" src="img/logo-text.svg" alt="Logo2">
                 </a>
 
-                <form class="header__form">
+                <form class="header__form" method="GET">
                     <input class="header__input" type="text" placeholder="Поиск товаров по сайту">
-                    <button class="header__search-btn">
+                    <button class="header__search-btn" type="submit">
                         <img class="header__search-img" src="img/search.svg" alt="Search">
                     </button>
                 </form>
 
                 <div class="header__btns-wrap">
-                    <button class="header-btn" type="button" id="open-modal">
+                    <button class="header-btn" type="button" id="open-btn">
                         <div class="header-btn__img-wrap">
                             <img class="header-btn__img" src="img/profile.svg" alt="Profile">
                         </div>
@@ -694,29 +692,32 @@
                         Richbee</p>
                 </div>
 
-                <form class="footer__form">
-                    <input type="text" class="footer__input" placeholder="Электронная почта">
+                <form class="footer__form" method="POST">
+                    <input class="footer__input" type="email" placeholder="Электронная почта">
                     <button class="basket-btn footer__btn" type="submit">ПОДПИСАТЬСЯ</button>
                 </form>
             </div>
         </div>
     </footer>
 
-    <div class="modal" id="my-modal">
+    <form class="modal" id="my-modal" method="POST">
         <p class="modal__title">Вход в личный кабинет</p>
+        <div class="modal__close" id="close-btn">
+            <img class="modal__close-img" src="./img/close-btn.svg">
+        </div>
 
         <p class="modal__label">Email</p>
         <input class="modal__input" type="email" placeholder="Email" value="nikolayivanovich@yandex.ru">
 
         <p class="modal__label">Пароль</p>
         <input class="modal__input" type="password" placeholder="Пароль">
-        <p class="forgot-pass">Забыли пароль?</p>
+        <button class="forgot-pass" type="button">Забыли пароль?</button>
 
         <div class="modal__btns">
-            <button class="basket-btn basket-btn--modal basket-btn--login">Войти</button>
-            <button class="basket-btn basket-btn--modal basket-btn--reg">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            <button class="basket-btn basket-btn--modal basket-btn--login" type="submit">Войти</button>
+            <button class="basket-btn basket-btn--modal basket-btn--reg" type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
         </div>
-    </div>
+    </form>
 </body>
 
 </html>

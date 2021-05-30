@@ -436,7 +436,8 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 9px 13px;
+            padding: 0px 13px;
+            height: 100%;
         }
 
         &__text {
@@ -1098,7 +1099,24 @@ body {
 .modal {
     padding: 70px 48px 45px 40px;
     border-radius: 4px;
-    display: none;
+    width: 600px;
+    background-color: #fff;
+
+    &__close {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        font-size: 0;
+        cursor: pointer;
+        height: 22px;
+        width: 22px;
+        z-index: 5;
+
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+    }
 
     &__title {
         font-size: 36px;
